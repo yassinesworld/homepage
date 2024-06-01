@@ -1,0 +1,50 @@
+.main {
+    background-color: rgba(53, 53, 53, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+}
+
+h1 {
+    transition: .1s ease-in-out;
+    text-align: center;
+    color: rgb(54, 54, 54);
+}
+
+.inbox {
+    width: 310px;
+}
+
+.one {
+    background-image: url(pfp.png);
+    background-size: cover;
+}
+
+.two {
+    background-image: url(fav.ico);
+    background-size: cover;
+}
+
+head {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url(waves.gif);
+    background-size: cover;
+    background-position-x: 50%;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="random.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random page 1</title>
+</head>
+<body>
+    <div class="main">
+    <h1 class="random">Cool color transition effect</h1>
+    <div id="picker"></div>
+    <input type="text" name="" id="text" placeholder="Color :" oninput="set()">
+</div>
+
+<script>
+    function set() {
+        box = document.getElementById("picker");
+        clr = document.getElementById("text");
+        box.style.background = clr.value;
+    }
+    </script>
+
+<style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            background-image: url(waves.gif);
+            background-size: cover;
+            background-position: 50%;
+            overflow: hidden;
+        }
+
+        .main {
+            text-align: center;
+            background-color: rgba(54,54,54,0.5);
+            backdrop-filter: blur(20px);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        #picker {
+            transition: .2s ease-in-out;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 64px;
+            height: 64px;
+            background-color: white;
+        }
+
+        .random {
+            font-family: "Rubik";
+            margin-bottom: 50px;
+            color: rgb(218, 218, 218);
+        }
+
+        #text {
+            font-family: "Rubik";
+            background-color: rgb(218, 218, 218);
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

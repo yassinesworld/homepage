@@ -38,6 +38,11 @@ h1 {
     background-size: cover;
 }
 
+.three {
+    background-image: url(random.png);
+    background-size: cover;
+}
+
 html {
     height: 100%;
 }
@@ -45,6 +50,7 @@ html {
 body {
     height: 100%;
     background-image: url(waves.gif);
+    background-position: 50%;
     background-size: cover;
-    background-position-x: 50%;
+    overflow: hidden;
 }

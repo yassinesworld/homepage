@@ -9,3 +9,10 @@ function set(str, clr) {
     document.getElementById("text").style.color = clr;
     document.getElementById("text").innerHTML = str;
 }
+
+function randomize() {
+    urls = ["random1.html"];
+    num = Math.floor(Math.random() * urls.length);
+
+    window.open(urls[num]);
+}
